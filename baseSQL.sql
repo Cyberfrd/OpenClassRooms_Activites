@@ -24,14 +24,12 @@ CREATE TABLE `minichat` (
 --
 
 INSERT INTO `minichat` (`ID`, `pseudo`, `message`, `date_message`) VALUES
-(1, 'Mathieu', 'Bonjour !', '2014-04-03 17:22:11'),
+(1, 'Mathieu', 'Bonjour Toi!', '2014-04-03 17:22:11'),
 (2, 'Tom', 'Salut toi !', '2014-04-03 17:23:10'),
-(3, 'Mathieu', 'Ca va Tom ?', '2014-04-03 17:23:20'),
-(4, 'Tom', 'Ben ouais, Ã§a fait un bail qu''on s''est pas vu !', '2014-04-03 17:24:01'),
-(5, 'Mathieu', 'On devrait se revoir !', '2014-04-03 20:12:16'),
-(6, 'Tom', 'Mais carrÃ©ment !', '2014-04-03 20:19:23'),
-(7, 'Tom', 'Me revoici', '2014-04-03 20:30:48'),
-(8, 'Tom', 'Me revoilÃ  !', '2014-04-03 20:32:13');
+(3, 'Mathieu', 'Ca va Thomas ?', '2014-04-03 17:23:20'),
+(4, 'Tom', 'Ben oui, Ca fait un bail qu''on s''est pas parlé !', '2014-04-03 17:24:01'),
+(5, 'Mathieu', 'On devrait se revoir rapidement !', '2014-04-03 20:12:16'),
+(6, 'Tom', 'Mais carrement !', '2014-04-03 20:19:23');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
