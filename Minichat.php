@@ -32,6 +32,16 @@
             die('Erreur : '.$e->getMessage());
     }
 
+// Récupération des 10 derniers messages
+    $reponse = $bdd->query('SELECT pseudo, message, DAY(date_message) AS jour, MONTH(date_message) AS mois, YEAR(date_message) AS annee, HOUR(date_message) AS heure, MINUTE(date_message) AS minute, SECOND(date_message) AS seconde FROM minichat ORDER BY date_message DESC LIMIT 10');
+
+    // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
+    while ($donnees = $reponse->fetch())
+    {
+        echo '<p>[' . $donnees['jour'] . '/' . $donnees['mois'] . '/' . $donnees['annee'] . ' ' . $donnees['heure'] . 'h' . $donnees['minute'] . 'm' . $donnees['seconde'] . 's] <strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> : ' . htmlspecialchars($donnees['message']) . '</p>';
+    }
+
+    $reponse->closeCursor();
 
     ?>
     
